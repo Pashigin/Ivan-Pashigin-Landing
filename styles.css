@@ -3,8 +3,13 @@ body {
 }
 
 #skills img {
-    max-width: 100px;
+    max-width: 6rem;
     filter: grayscale(100%);
+}
+
+#profileImage {
+    width: 70%; 
+    height: 70%;
 }
 
 .hover-shadow {
@@ -17,4 +22,8 @@ body {
 
 [data-bs-theme="dark"] .hover-shadow:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+[data-bs-theme="dark"] #portfolio img {
+    filter: grayscale(100%) brightness(0.8);
 }
