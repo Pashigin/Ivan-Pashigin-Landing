@@ -16,6 +16,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Иван Пашигин. Junior Аналитик Данных." />
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:url" content="https://pashigin.is-a.dev" />
     <meta property="og:type" content="website" />
@@ -24,27 +25,22 @@
     <meta property="og:image" content="https://pashigin.is-a.dev/Assets/linkPhoto.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
     <!-- Manrope Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" />
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" type="image/png" sizes="any" href="Assets/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png" />
     <link rel="icon" href="Assets/favicon/favicon.ico" sizes="any" />
-    <!-- CSS -->
-    <style>
-        body {
-            font-family: "Manrope", sans-serif;
-        }
 
-        #skills img {
-            max-width: 100px;
-            filter: grayscale(100%);
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -100,29 +96,18 @@
                         style="width: 70%; height: 70%; object-fit: cover" />
                 </div>
                 <div class="col-md-8 fs-5">
-                    <p>Привет! Меня зовут Иван 👋 Живу в ОАЭ 🇦🇪</p>
+                    <p>Привет! Меня зовут Иван 👋</p>
                     <p>
-                        Я бывший бизнес-ассистент и менеджер с большим
-                        опытом работы в области координации мероприятий,
-                        управления соц. сетями и системного
-                        администрирования.
+                        В настоящее время живу в Объединенных Арабских Эмиратах 🇦🇪 работаю junior аналитиком данных.
                     </p>
                     <p>
-                        Имею степень MБА и бакалавра информационных
-                        технологий от университа Murdoch University
-                        Australia. Свободно владею английским и русским
-                        языками, имею базовые навыки программирования,
-                        сетевого администрирования и управления проектами.
+                        Обладаю степенью MBA и дипломом бакалавра в области IT, полученными в Murdoch University.
+                        Свободно владею английским и русским языками.
                     </p>
-
-                    <p>
-                        Сейчас я изучаю аналитику данных, потому что мне
-                        нравится работать и структуировать различную
-                        информацию (например, анализировать, какую
-                        стиральную машину лучше купить, или сколько людей
-                        любят слушать музыку в рабочее время).
+                    <p>Я увлечен работой с данными 📈 поиском инсайтов и решением реальных задач — будь то выбор лучшей
+                        стиральной машины или анализ трендов музыкальных предпочтений во время работы.
                     </p>
-                    <p>Не стесняйтесь связаться со мной в любое время:</p>
+                    <p>Не стесняйтесь связаться со мной по ссылкам ниже:</p>
                     <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2 mt-3">
                         <a href="mailto:ivanp2@ya.ru" class="btn btn-outline-dark w-auto" target="_blank">
                             <i class="bi bi-envelope-fill"></i> Email
@@ -139,6 +124,10 @@
                         </a>
                         <a href="https://github.com/pashigin" class="btn btn-outline-dark w-auto" target="_blank">
                             <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="https://public.tableau.com/app/profile/alex.ferg3184/vizzes"
+                            class="btn btn-outline-primary w-auto" target="_blank">
+                            <i class="bi bi-file-bar-graph-fill"></i> Tableau
                         </a>
                     </div>
                 </div>
@@ -198,52 +187,78 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="card h-100 d-flex flex-column align-items-center">
+                        <img src="Assets/numpy.svg" alt="Numpy Logo" class="p-3" />
+                        <div class="card-body d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Numpy</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="card h-100 d-flex flex-column align-items-center">
+                        <img src="Assets/pandas.svg" alt="Pandas Logo" class="p-3" />
+                        <div class="card-body d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Pandas</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="portfolio" class="py-5 border-bottom">
         <div class="container">
-            <h2 class="text-center mb-5">Портфолио</h2>
+            <h2 class="text-center mb-5">Pet проекты</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <a href="https://github.com/Pashigin/Excel-projects" class="link-dark link-underline-opacity-0"
-                        target="_blank">
-                        <div class="card h-100 border-secondary">
-                            <img src="Assets/Dashboard.webp" class="card-img-top" alt="Excel Projects" />
+                <div class="col-md-4 mb-4 d-flex">
+                    <a href="https://github.com/Pashigin/Excel-projects" target="_blank"
+                        class="text-decoration-none w-100">
+                        <div class="card h-100 hover-shadow">
+                            <img src="Assets/Excel_Dashboard.webp" class="card-img-top" alt="Excel Project" />
                             <div class="card-body">
-                                <h4 class="card-title">Excel projects</h4>
-                                <p class="card-text">Здесь вы найдете мои проекты по работе с Excel для анализа данных.
-                                    Диаграммы, сводные таблицы, условия, ВПР и многое другое. (Кликните для просмотра)
+                                <h4 class="card-title">Аналитика в Excel</h4>
+                                <p class="card-text">
+                                    Здесь вы найдете мой проект, посвященный работе с Excel для анализа данных.
+                                    Диаграммы, сводные таблицы, условное форматирование, VLOOKUP и многое другое.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4 d-flex">
+                    <a href="https://github.com/Pashigin/Cloud-Analysis-Learning-Project" target="_blank"
+                        class="text-decoration-none w-100">
+                        <div class="card h-100 hover-shadow">
+                            <img src="Assets/Tableau_Dashboard.webp" class="card-img-top"
+                                alt="Cloud-Analysis-Learning-Project" />
+                            <div class="card-body">
+                                <h4 class="card-title">Аналитика в облаке</h4>
+                                <p class="card-text">Проект основан на учебном курсе "Data Learn". Здесь вы найдете
+                                    создание локальной базы данных PostgreSQL, её перенос на облачный сервер и анализ
+                                    данных, размещенных в облаке.
                                 </p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 border-secondary">
-                        <img src="Assets/Dashboard.webp" class="card-img-top" alt="Project 2" />
-                        <div class="card-body">
-                            <h4 class="card-title">Project 2</h4>
-                            <p class="card-text">Description of Project 2. Information on what was achieved and the
-                                skills used.</p>
+                <div class="col-md-4 mb-4 d-flex">
+                    <a href="https://github.com/Pashigin/AirBNB-Tableau-Dashboard" target="_blank"
+                        class="text-decoration-none w-100">
+                        <div class="card h-100 hover-shadow">
+                            <img src="Assets/Tableau_Dashboard2.webp" class="card-img-top" alt="Tableau-Dashboard" />
+                            <div class="card-body">
+                                <h4 class="card-title">Дашбоард AirBNB с помощью Tableau</h4>
+                                <p class="card-text">
+                                    Цель этого учебного проекта — разобраться, как работать с Tableau Public на основе
+                                    данных, предоставленных с платформы Kaggle..
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 border-secondary">
-                        <img src="Assets/Dashboard.webp" class="card-img-top" alt="Project 3" />
-                        <div class="card-body">
-                            <h4 class="card-title">Project 3</h4>
-                            <p class="card-text">Description of Project 3. Insights into the project and its
-                                significance.</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-
     <section id="contact" class="py-5 border-bottom">
         <div class="container">
             <h2 class="text-center mb-5">Контакты</h2>

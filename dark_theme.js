@@ -20,7 +20,7 @@ function applyTheme(theme) {
         githubButton.classList.replace('btn-outline-dark', 'btn-outline-light');
         contactLinks.forEach(link => link.classList.replace('link-dark', 'link-light'));
         sendButton.classList.replace('btn-dark', 'btn-outline-light');
-        portfolioImages.forEach(image => image.style.filter = 'grayscale(100%)');
+        portfolioImages.forEach(image => image.style.filter = 'grayscale(100%) brightness(0.9)');
     } else {
         emailButton.classList.replace('btn-outline-light', 'btn-outline-dark');
         githubButton.classList.replace('btn-outline-light', 'btn-outline-dark');

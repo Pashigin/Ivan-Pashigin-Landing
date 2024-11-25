@@ -11,7 +11,6 @@
 
         gtag('config', 'G-LS4S7J68P6');
     </script>
-    <!-- End Google Tag Manager -->
 
     <title>Ivan Pashigin | Data Analyst</title>
     <meta charset="UTF-8" />
@@ -23,7 +22,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Ivan Pashigin | Data analyst" />
     <meta property="og:description" content="Ivan Pashigin. Junior Data Analyst." />
-    <meta property="og:image" content="https://pashigin.is-a.dev/Assets/linkPhoto.png" />
+    <meta property="og:image" content="https://pashigin.is-a.dev/Assets/linkPhoto.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
@@ -33,30 +32,19 @@
     <!-- Manrope Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" />
     <!-- Favicon -->
-
     <link rel="apple-touch-icon" type="image/png" sizes="any" href="Assets/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png" />
     <link rel="icon" href="Assets/favicon/favicon.ico" sizes="any" />
+
     <!-- CSS -->
-
-    <style>
-        body {
-            font-family: "Manrope", sans-serif;
-        }
-
-        #skills img {
-            max-width: 100px;
-            filter: grayscale(100%);
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="styles.css" />
 
 <body>
     <header class="p-2 border-bottom bg-dark">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand mb-0 text-light" href="#">Ivan Pashigin</a>
+                <a class="navbar-brand mb-0 text-light" href="https://pashigin.is-a.dev">Ivan Pashigin</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -105,17 +93,18 @@
                         style="width: 70%; height: 70%; object-fit: cover" />
                 </div>
                 <div class="col-md-8 fs-5">
-                    <p>Hello! I'm Ivan 👋 A Russian-born specialist, who is currently living in the UAE 🇦🇪</p>
-                    <p>Experienced Business Assistant and Manager with a strong background in IT administration, social
-                        media management, and event coordination.
+                    <p>Hello! I'm Ivan 👋</p>
+                    <p>
+                        A Russian-born specialist, who is currently living in the United Arab Emirates 🇦🇪 and working
+                        as a Junior Data Analyst.
                     </p>
-                    <p>Hold an MBA and a Bachelor's in IT from Murdoch University. Fluent in English and Russian, with
-                        basic programming, network administration, and project management skills.
+                    <p>
+                        Hold an MBA and a Bachelor's degree in IT from Murdoch University. Fluent in English and
+                        Russian.
                     </p>
-                    <p>I'm currently studying data analytics because I enjoy working with different data (like analyzing
-                        which washing machine is best to buy, or how many people like to listen to music during work
-                        hours).
-                    </p>
+                    <p> I am passionate about working with data 📈 uncovering insights, and solving real-world problems
+                        — whether it's determining the best washing machine to buy or analyzing trends in music
+                        preferences during work hours.</p>
                     <p>Don't be shy and contact me at the links below:</p>
                     <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2 mt-3">
                         <a href="mailto:ivanp2@ya.ru" class="btn btn-outline-dark w-auto" target="_blank">
@@ -133,6 +122,10 @@
                         </a>
                         <a href="https://github.com/pashigin" class="btn btn-outline-dark w-auto" target="_blank">
                             <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="https://public.tableau.com/app/profile/alex.ferg3184/vizzes"
+                            class="btn btn-outline-primary w-auto" target="_blank">
+                            <i class="bi bi-file-bar-graph-fill"></i> Tableau
                         </a>
                     </div>
                 </div>
@@ -192,50 +185,77 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="card h-100 d-flex flex-column align-items-center">
+                        <img src="Assets/numpy.svg" alt="Numpy Logo" class="p-3" />
+                        <div class="card-body d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Numpy</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <div class="card h-100 d-flex flex-column align-items-center">
+                        <img src="Assets/pandas.svg" alt="Pandas Logo" class="p-3" />
+                        <div class="card-body d-flex flex-column justify-content-end">
+                            <h4 class="card-title">Pandas</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="portfolio" class="py-5 border-bottom">
         <div class="container">
-            <h2 class="text-center mb-5">Portfolio</h2>
+            <h2 class="text-center mb-5">Pet Projects</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <a href="https://github.com/Pashigin/Excel-projects" class="link-dark link-underline-opacity-0"
-                        target="_blank">
-                        <div class="card h-100 border-secondary">
-                            <img src="Assets/Dashboard.webp" class="card-img-top" alt="Excel Projects" />
+                <div class="col-md-4 mb-4 d-flex">
+                    <a href="https://github.com/Pashigin/Excel-projects" target="_blank"
+                        class="text-decoration-none w-100">
+                        <div class="card h-100 hover-shadow">
+                            <img src="Assets/Excel_Dashboard.webp" class="card-img-top" alt="Excel Project" />
                             <div class="card-body">
-                                <h4 class="card-title">Excel projects</h4>
-                                <p class="card-text">Here you'll find my projects on working with Excel for data
-                                    analytics. Charts, Pivots, Conditions, Vlookups and much more. (Click to view)</p>
+                                <h4 class="card-title">Excel analytics</h4>
+                                <p class="card-text">Here you'll find my project on working with Excel for data
+                                    analytics. Charts, Pivots, Conditions, Vlookups, and much more.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 border-secondary">
-                        <img src="Assets/Dashboard.webp" class="card-img-top" alt="Project 2" />
-                        <div class="card-body">
-                            <h4 class="card-title">Project 2</h4>
-                            <p class="card-text">Description of Project 2. Information on what was achieved and the
-                                skills used.</p>
+                <div class="col-md-4 mb-4 d-flex">
+                    <a href="https://github.com/Pashigin/Cloud-Analysis-Learning-Project" target="_blank"
+                        class="text-decoration-none w-100">
+                        <div class="card h-100 hover-shadow">
+                            <img src="Assets/Tableau_Dashboard.webp" class="card-img-top"
+                                alt="Cloud-Analysis-Learning-Project" />
+                            <div class="card-body">
+                                <h4 class="card-title">Analytics from the cloud</h4>
+                                <p class="card-text">The project is based on the "Data Learn" training course. Here you
+                                    will find creating a local PostgreSQL database, importing it to a cloud server, and
+                                    analyzing based on the data in the cloud.
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 border-secondary">
-                        <img src="Assets/Dashboard.webp" class="card-img-top" alt="Project 3" />
-                        <div class="card-body">
-                            <h4 class="card-title">Project 3</h4>
-                            <p class="card-text">Description of Project 3. Insights into the project and its
-                                significance.</p>
+                <div class="col-md-4 mb-4 d-flex">
+                    <a href="https://github.com/Pashigin/AirBNB-Tableau-Dashboard" target="_blank"
+                        class="text-decoration-none w-100">
+                        <div class="card h-100 hover-shadow">
+                            <img src="Assets/Tableau_Dashboard2.webp" class="card-img-top" alt="Tableau-Dashboard" />
+                            <div class="card-body">
+                                <h4 class="card-title">AirBNB Tableau Dashboard</h4>
+                                <p class="card-text">The purpose of this pet project is to understand how to work
+                                    with Tableau Public based on the data provided from Kaggle.
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section id="contact" class="py-5 border-bottom">
         <div class="container">
